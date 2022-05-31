@@ -8,5 +8,4 @@ It then does the following:
 
 - Convert Kelvin to Celcius
 - Convert celcius to fahrenheit
-
-As a bnous Convert celcius to Newton's
+- **As a bonus Convert celcius to Newton's**
