@@ -11,6 +11,6 @@ console.log(`The temperature is ${celsius} degrees celsius`);
 console.log(`In Fahrenheit, that would be ${fahrenheit} degrees`);
 
 // Bonus: Celsius converted to Newton
-// let newton = celsius * (33/100);
-// newton = Math.floor(newton);
-// console.log(`The temperature is ${newton} degrees Newton`);
+let newton = celsius * (33/100);
+newton = Math.floor(newton);
+console.log(`For shits and giggles, that would also be ${newton} Newton degrees`);
