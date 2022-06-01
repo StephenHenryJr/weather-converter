@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Converter</title>
-    <link rel="stylesheet" href="./tailwindcss/output.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Converter</title>
+  <link rel="stylesheet" href="./tailwindcss/output.css">
 </head>
+
 <body>
-    <div class="container h-screen w-screen bg-slate-500 mx-auto">
-    
-    </div>
-    <script src="main.js"></script>
+  <div class="test container h-screen w-screen bg-slate-500 mx-auto p-12 font-mono">
+    <h1>Kelvin Weather Converter</h1>
+    <p>The Kelvin scale is a unit of temperature, mostly used in the world of science.<br>
+      Enter your temperature in Kelvin units below to have them converted!
+    </p>
+    <form>
+      <label for="fname">Kelvin Units:</label><br>
+      <input id="input" type="text" id="fname" name="fname" value=""><br>
+    </form>
+    <button id="convert" class="border border-black p-1 rounded shadow">Convert</button>
+    <p><span id="celcius"></span> degrees Celcius</p>
+    <p><span id="fahrenheit"></span> degrees Fahrenheit</p>
+    <p><span id="newton"></span> on the Netwon scale</p>
+  </div>
+  <script src="main.js"></script> 
 </body>
+
 </html>
 <!-- npx tailwindcss -i ./styles.css -o ./tailwindcss/output.css --watch -->
