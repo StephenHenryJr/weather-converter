@@ -1,8 +1,10 @@
-//Base Kelvin temperature
-// let kelvin = document.getElementById('input').value;
-let kelvin = 0;
+let submit = document.getElementById('button')
+let input = document.getElementById('input');
+
 
 let convert = () => {
+  //Base Kelvin temperature
+  let kelvin = input.value;
   if (typeof kelvin !== 'number') {
     console.log('Enter a valid number')
   }
@@ -23,9 +25,5 @@ let convert = () => {
   document.getElementById('fahrenheit').innerHTML = `${fahrenheit}`;
   document.getElementById('newton').innerHTML = `${newton}`;
 }
-convert();
-// Grab whatever is input - done
-// make sure it's a number
-// convert them to all 3 units 
-// place them in the html  
-// fire off function on click
+// convert()
+submit.addEventListener('click', convert)
